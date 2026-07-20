@@ -1,7 +1,8 @@
 export type ColorThemeKey =
   | "openhands-deepsea"
   | "openhands-neutral"
-  | "openhands-neo";
+  | "openhands-neo"
+  | "openhands-softblue";
 
 export interface ColorThemeDefinition {
   label: string;
@@ -179,6 +180,62 @@ export const COLOR_THEMES: Record<ColorThemeKey, ColorThemeDefinition> = {
     scale: NEUTRAL_SCALE,
     heroui: NEUTRAL_HEROUI,
     tokens: NEO_WHITE_BUTTON_TOKENS,
+  },
+
+  "openhands-softblue": {
+    label: "OpenHands-SoftBlue",
+    // Soft slate-blue palette: same positional mapping as DeepSea, but with a
+    // lighter, lower-contrast blue ramp for a gentler overall feel.
+    scale: {
+      "--cool-grey-50": "#F4F8FD",
+      "--cool-grey-100": "#E9F0F9",
+      "--cool-grey-200": "#D6E2F1",
+      "--cool-grey-300": "#BCCDE4",
+      "--cool-grey-400": "#9DB2CF",
+      "--cool-grey-500": "#7E93B3",
+      "--cool-grey-600": "#647796",
+      "--cool-grey-700": "#4E5F7B",
+      "--cool-grey-800": "#3C4A63",
+      "--cool-grey-900": "#2F3A4F",
+      "--cool-grey-925": "#263041",
+      "--cool-grey-950": "#1A2232",
+      "--cool-grey-975": "#131926",
+    },
+    heroui: {
+      "--heroui-background": "220 31.58% 14.9%",
+      "--heroui-background-foreground": "213.33 69.23% 97.45%",
+      "--heroui-foreground-50": "221.05 33.33% 11.18%",
+      "--heroui-foreground-100": "220 31.58% 14.9%",
+      "--heroui-foreground-200": "217.78 26.21% 20.2%",
+      "--heroui-foreground-300": "219.38 25.4% 24.71%",
+      "--heroui-foreground-400": "218.46 24.53% 31.18%",
+      "--heroui-foreground-500": "217.33 22.39% 39.41%",
+      "--heroui-foreground-600": "217.2 20% 49.02%",
+      "--heroui-foreground-700": "216.23 25.85% 59.8%",
+      "--heroui-foreground-800": "214.8 34.25% 71.37%",
+      "--heroui-foreground-900": "214.5 42.55% 81.57%",
+      "--heroui-foreground": "214.5 42.55% 81.57%",
+      "--heroui-content1": "217.78 26.21% 20.2%",
+      "--heroui-content1-foreground": "213.75 57.14% 94.51%",
+      "--heroui-content2": "219.38 25.4% 24.71%",
+      "--heroui-content2-foreground": "213.33 49.09% 89.22%",
+      "--heroui-content3": "218.46 24.53% 31.18%",
+      "--heroui-content3-foreground": "214.5 42.55% 81.57%",
+      "--heroui-content4": "217.33 22.39% 39.41%",
+      "--heroui-content4-foreground": "214.8 34.25% 71.37%",
+      "--heroui-default-50": "221.05 33.33% 11.18%",
+      "--heroui-default-100": "220 31.58% 14.9%",
+      "--heroui-default-200": "217.78 26.21% 20.2%",
+      "--heroui-default-300": "219.38 25.4% 24.71%",
+      "--heroui-default-400": "218.46 24.53% 31.18%",
+      "--heroui-default-500": "217.33 22.39% 39.41%",
+      "--heroui-default-600": "217.2 20% 49.02%",
+      "--heroui-default-700": "216.23 25.85% 59.8%",
+      "--heroui-default-800": "214.8 34.25% 71.37%",
+      "--heroui-default-900": "214.5 42.55% 81.57%",
+      "--heroui-default-foreground": "213.33 69.23% 97.45%",
+      "--heroui-default": "218.46 24.53% 31.18%",
+    },
   },
 };
 
